@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/> 
+    <meta name="keywords" content=",netoneline,bilgi,blog,yazilim" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Blog Sitesi" />
+
+    <link rel="stylesheet" type="text/css" href="dosyalar/iletisim.css">
+    <script defer src="dosyalar/iletisim.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/coolvetica-2" rel="stylesheet">
+ <link rel="icon" href="img/website.png" type="image/x-icon" />
+    <title>İletişim</title>
+</head>
+
+<body style="background: url('img/arkaplan4.jpg') center center fixed;">
+    <header>
+        <nav>
+            <a class="anasayfamanu" data-value="Ana Sayfa" href="https://netoneline.com">Ana Sayfa</a>
+            <a class="blogmanu" data-value="Blog" href="https://netoneline.com/blog.html">Blog</a>
+            <a class="hakkimdamanu" data-value="Hakkımda" href="https://netoneline.com/hakkimda.html">Hakkımda</a>
+            <a class="iletisimmanu" data-value="İletişim" href="https://netoneline.com/iletisim.html">İletişim</a>
+        </nav>
+        <img class="menu-resim" src="img/profil.jpeg" alt="Profil Fotoğrafı">
+    </header>
+    <br>
+    <h1 style="background-color: white; margin: 10px auto; padding: 10px; width: 1000px;" >Benim ile iletişime geçmek için lütfen mesajınızı giriniz.</h1>
+    <br>
+    <br>
+ 
+    <form id="contact-form">
+        <label for="isim">Adınız:</label>
+        <input placeholder="İsminiz" type="text" id="name" name="name" required>
+        <br>
+        <label for="email">E-posta Adresiniz:</label>
+        <input placeholder="E-posta Adresiniz" type="email" id="email" name="email" required>
+        <br>
+        <label for="mesaj">Mesajınız:</label>
+        <textarea id="mesaj" placeholder="Bana göndermek istediğiniz mesajı yazınız..." name="message" required></textarea>
+        <br>
+        <button type="submit" onclick="sendEmail() ">Gönder</button>
+        <br>
+        <br>
+     
+    </form>
+    <br>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <br>
+                <a href="https://netoneline.com">Gizlilik</a>
+                <a href="https://netoneline.com/">Hizmetler</a>
+                <a href="https://netoneline.com/hakkimda.html">Hakkımda</a>
+                <a href="https://netoneline.com/iletisim.html">İletişim</a>
+                <p><br>Bu site 2024-2025ödevi olarak oluşturulmuştur.</p>
+            </div>
+            <div class="footer-social">
+                <br>
+                   <a href="https://bandirma.site" target="_blank" rel="noopener noreferrer"><img src="img/website.png" alt="Web Sitem"></a>
+                <a href="" alt="Web Sitem"></a>
+                <a href="" alt="İnstagram Hesabım"></a>
+                <a href="" alt="Bandırma Web Sitesi"></a>
+            </div>
+        </div>
+        <p align="center" style="font-family: 'Coolvetica', sans-serif;">Tüm Hakları Saklıdır © 2023 </p>
+    </footer>
+
+</body>
+</html>
