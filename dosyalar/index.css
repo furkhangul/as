@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/collective');
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  text-align: center;
+    font-family: 'Poppins', sans-serif ;
+
+}
+
+header {
+  background-color: #010718;
+   font-family: 'Coolvetica', sans-serif;
+  color: #fff;
+  padding: 1rem 0;
+}
+.menu-resim {
+    position: absolute;
+    left: 12px;
+    top: 22px;
+    border-radius: 60%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+nav a {
+    color: grey;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+nav a:active {
+    color: lightskyblue;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+#intro {
+  background: url('img/arkaplan4.jpg');
+  background-color: #fff;
+  text-align: center;
+  opacity: 0.9;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+#intro2 {
+  background: url('img/arkaplan4.jpg');
+  background-color: #fff;
+  text-align: center;
+  opacity: 0.9;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#exploreBtn {
+  border-radius: 30px;
+  background-color: ghostwhite;
+  color: black;
+}
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #010718;
+  color: khaki;
+  padding: 1rem 0;
+  /*position: fixed;*/
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    color:white;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    font-family: 'Coolvetica', sans-serif;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+    position: relative;
+}
+.footer-links a:hover,
+.footer-social a:hover{
+    color: grey;
+}
+
+.footer-social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social img:hover {
+    transform: scale(1.2);
+}
+
+.container {
+
+}
+
+.container .text{
+  position: relative;
+  text-align: center;
+  color: #4070F4;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.container .text.first-text{
+  color:#FFF;
+}
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#010718;
+  border-left: 2px solid #4070F4;
+  animation: animate 4s steps(12) infinite;
+
+}
+.container .text.birinci{
+  color:white;
+}
+.text.ikinci:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backgrond:url('img/arkaplan2.jpg');
+  border-left: 1px solid black;
+  animation: animate 4s steps(12) infinite;
+
+}
+@keyframes animate{
+  40% , 60%{
+    left: 100%; 
+  }
+  100%{
+    left: 0%;
+  }
+}
