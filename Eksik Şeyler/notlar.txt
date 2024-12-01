@@ -31,6 +31,17 @@
 
 
   -İkon eklenilecek 
+    *<head>
+    <!-- ICO Formatı -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- PNG Formatı -->
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Apple Touch Icon (iOS cihazlar için) -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    </head>
+
     
 
     
