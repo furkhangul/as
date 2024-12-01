@@ -1,1 +1,29 @@
-footerler ile alakalı problemler çözülecek 
+*FOOTERLER İLE ALAKALI PROBLEMLER:
+
+  - En alttaki made with kısmı değiştirilmesi gerekiyor.
+
+  - Bize ulaşın kısmındaki linkler aktif edilecek.
+    * href=" link uzantısı ", href="tel:", href="mailto:"
+    * <a href="https://wa.me/905551234567">WhatsApp'tan Mesaj Gönder</a>
+    * <a href="https://wa.me/905551234567">WhatsApp'tan Mesaj Gönder</a>
+    * <a href="sms:+905551234567">SMS Gönder</a>
+
+  - Referanslar kısmındaki linkler yenilenecek 
+
+  - Linkler kısmındaki iletişim kısmı yenilenecek ve ilietişim linki yenilenecek
+
+  - Footer kısmındaki alt sarı butonların ikonları değiştirilecek 
+    * <span class="fa fa-search">
+    * <span class="fa fa-phone">
+    * <span class="fa fa-instagram">
+    * <span class="fa fa-envelope">
+    * style="background-color:blue"
+
+    -Header kısmındaki yanlış yazımlar ve hatalar düzeltilecek linkler aktif hale gelecek.
+
+    -Carrusel yapısı hataları ile düzeltilecek
+
+    -İletişim kısmı eklenecek
+
+    
+  
