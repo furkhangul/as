@@ -29,6 +29,8 @@
 
   -Komple tema değişikliğine gidilip gidilmeyeceği sorulacak.
 
+
+  -İkon eklenilecek 
     
 
     
