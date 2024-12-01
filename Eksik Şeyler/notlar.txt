@@ -19,11 +19,17 @@
     * <span class="fa fa-envelope">
     * style="background-color:blue"
 
-    -Header kısmındaki yanlış yazımlar ve hatalar düzeltilecek linkler aktif hale gelecek.
+  - Header kısmındaki yanlış yazımlar ve hatalar düzeltilecek linkler aktif hale gelecek.
 
-    -Carrusel yapısı hataları ile düzeltilecek
+  - Carrusel yapısı hataları ile düzeltilecek
 
-    -İletişim kısmı eklenecek
+  - İletişim kısmı eklenecek
+
+  - İstenilmesi halinde tema rengi değişecek
+
+  -Komple tema değişikliğine gidilip gidilmeyeceği sorulacak.
+
+    
 
     
   
