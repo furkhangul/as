@@ -1,0 +1,19 @@
+ls: dosyanın içindekileri görmemizi sağlar.
+ls -a: gizli dosyaların gize göstermemizi sağlar.
+ls -l: dosyların ne zaman açıldığı, kim tarafından açıldığı gibi bilgileri bize verir.
+history: geçmişte terminale girdiğim her kodu kaydeder.
+ls -la: hem gizli dosyaları hem de dosyaların hakkındaki bilgileri verir.
+pwd: bilgisayardaki o anki konumunu gösterir.(Sızma sırasında karşı bilgisayardaki konumumuz için önemlidir.)
+cd: bir dosyayı açmamızı sağlar.
+rm -r (dosya adı) : bir dosyayı silememizi sağlar.
+cd ..:girdiğimiz dosyadan geriye doğru gitmemizi sağla.
+ls (dosya adı): dosyaya girmeden dosya içindekileri görmemizi sağlar.
+mkdir: bir dosya açmamızı sağlar.
+touch dosya.txt(örnek olarak): belge oluşturmamızı sağlar.
+cat dosyaadi.txt(örenk olarak): belgelerin içinde ne olduğunu açmaya gerek kalmadan görmemizi sağlar.
+cat -n dosyaadı.txt(örnek olarak): açılan belgenin içeriğinin karışmaması için notped gibi numaralandırarak verir.
+cp ornek.txt hedef/ : kopyalama işlemini gerçekleştirir ilk dizin kopyalancak belgeyi ikinci dizin yapıştırılacak yeri belirtir.
+mv: kopyala yapıştır gibi aynı parametreler ile yazılır.
+uname -a : kendi çekirdeğinin ve nunmaranın bilgilerini verir.Hacklediğimiz makina için kullanılır genellikle.
+wc: bir dökümanın içindeki kaç satır kaç kelime olduğunu gösterir.
+ctrl + c: çalışan herhangi bir programın kapatılmasını sağlar.

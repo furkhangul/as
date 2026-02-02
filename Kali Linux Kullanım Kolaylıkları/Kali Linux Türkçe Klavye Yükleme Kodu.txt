@@ -1,0 +1,1 @@
+Terminale giriş yapıyoruz hemen ardından "setxkbmap tr" komutunu girerek klavyemizi normal Türkçe klavyeye çeviriyoruz.

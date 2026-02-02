@@ -1,0 +1,33 @@
+DNS(Domain Name Server)ENUM 
+-----------------------------------------------------------------------
+
+DNSenum aracı ile etki alanına ait IP adresleri, Mail suncuuları ve DNS sunucuları tespit edilebilir, bölge transferi gerçekleştirilebilir, belirtilen bir sözlük dosyası kullanılarak veya Google üzerinden alt alan adları tespit edilebilir, recursive sorgular yapılabilir, belirlenen IP bloklarındaki tüm IP adresleri için PTR sorguları gerçekleştirilebilir.
+Hedef sistem hakkında bilgi toplamaya yarayan bir araçtır. Server adları, subdomainleri, host adresleri, mail adresleri gibi bilgilere ulaşmamızı sağlar.
+
+DNSenum aracı Kali üzerinde varsayılan olarak gelmektedir.
+
+------------------------------------------------------------------------
+
+--help / -h: Programın kodlarının ingilizce dilinde açıklanışını ve kullanımını açıklar.
+------------------------------------------------------------------------
+dnsenum --url sitename.com : Programın hangi site üzerinden bilgi getireceğini gösteren koddur.
+------------------------------------------------------------------------
+–dnsserver : Yukarda belirttiğim şekilde yazdıktan sonra yanına bu parametreyi girersek program hedef sunucunun İP ve Domain adreslerini bize çeker.
+–enum : Google sayfaları üzerinden araştırma
+–noreverse: IP/Domain eşleştirmesini atla
+–nocolor: Çıktılarda renk kullanma(beyaz renkte çıktı göster)
+–private : Domain adresine ait IP adresleini ilgili alan kaydet.
+–subfile: Sub domainleri ilgili alan kaydet.
+–timeout: TCP ve UDP isteklerinde zaman aşım süresini belirler
+–threads: Yapılan istekleri farklı kanallardan gerçekleştirir.
+-v : Yapılan işlem ve hata mesajlarını detaylı gösterir.
+GOOGLE Üzerinden Yapılan İşlemler
+-p: Google sayfalarında arama yapma
+-s: Google üzerinden subdomain araması için kullanma.
+BRUTE-FORCE Ayarları
+-f : Belirlediğiniz kelime listesinden subdomain testi yapar.
+-u : Sonuçlar üzerinde güncelleme yapar.
+-r : Subdomain leri recursive olarak bulmaya çalışır.
+-d :İsteklerin bekleme süresi
+-w: whois kayıtlarından sorgulama
+-o: Çıktıları belirlenen alan yazma

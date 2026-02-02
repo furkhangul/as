@@ -1,0 +1,9 @@
+Kali Linux'ta en başta açılan bütün hesaplar admin olarak değil de normal kullanıcı olarak kısıtlanır.
+Admin yetkilerini almak için: 
+
+-Yalnızca "Sudo" parametresini kullanarak yazılan kodlarda tek seferlik izin alınır.
+-"Sudo su" parametesini kullanarak terminali kullanım süresi boyunca admin yetkilerini veriyoruz.
+-Tamamen yetki almak için kod satırına önce "Sudo su" parametresini girip kısa süreliğine admin yetkisi alıyoruz. Hemen ardından "passwd" komutunu girip kali linuxtaki admin şifresini değiştiriyoruz. Artık yeni şifreyi oluşturduğumuza göre sağ en üst köşede çıkış butonuna basarak çıkış yapma bölümünün en alt köşesinde bulunan "Switch User" kısmına basarak kullanıcı değiştirmek için giriş paneline giriyoruz. Hemen ardından kullanıcı adına "root" şifreye ise daha önce değiştirdiğimiz şifreyi giriyoruz.
+
+
+---Dark Web'e giriş yapmak istersek eğer admin girişi ile giriş yapamayız Tor Browser bizi engellediğinden dolayı noraml kullanıcı girişi ile giriş sağlanır.

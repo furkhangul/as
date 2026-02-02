@@ -1,0 +1,10 @@
+[*]Normalde premium olduğu için bu tools para ile almamız gerekiyor fakat yetkililer ile konuşarak bedava premium alabiliriz.
+>>Alabilmek için öncelikle bir edu.tr uzantılı mail adresine sahip olmamız gerekiyor. Hemen ardından bu mail adresi ile support@shodan.io adlı destek mail adresine premium alacak paramızın olmadığını bildiriyoruz. Bu mailden sonra 1 veya 2 gün sonra elimize hesap gelecektir.
+
+-------------------------------------------------------------KULLANIMI------------------------------------------------------------
+>>> Search Default Password
+Bu kod ile genel olarak sabit şifreleri hackleyebiliriz.
+
+>>> "Server: Virata-EmWeb" hp Country:"TR"
+
+Bu kod ile açıklı HP yazıcıları ele geçirebiliriz

@@ -1,0 +1,3 @@
+Linux sistemleri her gün güncelleme aldığından sürekli yenilemek gerekir bunun için "apt-get update" kodunu kullanarak güncellemelerimizi alırız. 
+Linux sistemleri güncellememiz uygulamaları güncellediğimiz anlamına gelmediğinden uygulamaları güncellemek için "apt-get upgrade" parametresini kullanırız.
+Sürekli güncellemeler ve yüklenen yüzlerce dosyalar sisteme yüklendiğinden bunları silmek için "apt-get clean" komutunu kullanarak kullanılmayan dosyaları ve paketleri silmemizi sağlıyor.

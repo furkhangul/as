@@ -1,0 +1,47 @@
+Netdiscover aracı ile aynı ağda bağlı olan cihazların ip adresine ulaşabiliriz. Buna yerel ağda arma deniyor.  Yönlendirici (router) ve ağa bağlı olan cihazlar (clients) hakkında bilgi toplayabilir. Netdiscover aracı, ağ içerisindeki cihazların IP ve MAC adresleri ile işletim sistemlerini, yönlendiricilerinde (router) üretici bilgisini görebilmemizi sağlar.
+-----------------------------------------------------------------------------------
+UYARI !!! 
+Netdiscover programı kali linuxta zaten kurulu fakat root yetkisi gerekiyor programı kullanabilmek için root olarak giriş yapmamız gerekiyor.
+-----------------------------------------------------------------------------------
+Başlangıç için örnek bir kod olan:
+kali@kali:-$ sudo netdiscover -r 10.0.2.0/24 -i eth0 -c 5 
+
+kodunu kullanırsak 
+
+sudo: yönetici izni almamızı sağlar.
+
+netdiscover: programın terminalde çalıştırmasını başlatır.
+
+-r kodu: bu kod arama yapmak istediğiniz IP adresi aralığınızı seçmenize yardım eder mesela 192.168.1.1/24 adlı kodda /24 ifadesi bize kodlama bayt boyutu olan 8in katları olarak ilk 3 haneyi sabit bırakıp sonuncu haneyi gidebileceği en uç noktaya kadar (.256) artarak  götürmesini ifade eder. Eğer 192.168.1.1/16 ifadesini girmiş olsaydık son iki haneyi en fazla götürebildiği noktaya kadar(256.256) sıra ile götürürdü.
+
+-i kodu: Bu kod bizim internet wifi sağlayıcımızın adını girmemizi sağlar. Kali de bunu bulabilmek için önce ifconfig yazar en sondaki eth0 veya orada ne yazıyor ise o bizim sağlayıcımız olur. Bunu belirtmek zorundayız.
+
+-c kodu: Bu kod yapılacak taramının kaç defa yapılacağını girmemizi sağlar ne kadar fazla olursa o kadar iyi sonuç alınır ama ideal olarak 5-10 girilmesi kullanışlılık ve hızı için tercih edilir.
+
+------------------------------------------------------------------------------------
+
+Pasif (Passive) Tarama
+Pasif tarama yapıldığı zaman netdiscover’ın sonuç verme süresi uzayacaktır. Ancak daha gizli, daha “sessiz”, bir tarama yapılmak istendiği zaman pasif tarama ideal olacaktır.
+
+örnek kod ile gösterecek olursam:
+kali@kali:-$ sudo netdiscover -r 10.0.2.0/24 -p  -i eth0
+
+Netdiscover ile pasif tarama yapabilmek için herhangi komuta -p parametresini eklemek yeterli olacaktır.
+
+-------------------------------------------------------------------------------------
+
+Diğer Parametreler
+-m file: Bir dosyadaki bilinen adresler üzerinden tarama yapar.
+-F filter: Paket filtrelemesi yapar. (Normalde arp olarak filtreler.)
+-s time: Tarama yapılırken gönderilen paketler arasındaki bekleme süresini ayarlar. (Milisaniye cinsinden yazılması gerekir.)
+-n node: Tarama için son IP oktetini ayarlamak için kullanılır. (2-253 arası)
+-c count: Paketlerin gönderilme miktarını gösterir.
+-f Hızlı modu aktif hale getirir, daha hızlı tarama yapar. Otomatik taramalar için önerilir.
+-d Aracın konfigürasyon dosyasındaki ayaları göz ardı ederek tarama yapar
+-S İstekler arasındaki zaman kaybını görmezden gelir
+-P Taramayı daha kolay dışa aktarılabilir bir şekilde ekrana yazdırır.
+-N Taramayı yazdırırken header kısmını (Tarama durumunun yazdığı kısım) göstermez.
+
+
+
+

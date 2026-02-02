@@ -1,0 +1,20 @@
+IP ÜZERİNE SİTE AÇMA 
+-----------------------------------
+Başlık üzerine anlayacağımız üzere IP adresimizi kullanarak kendimize online site kurabiliriz. 
+Kali bize hali hazırda bi site veriyor biz bunu kullanacağız.
+bunun için  "file system" adlı dosyaya basıyoruz. Ardından "var" adlı dosyaya hemen ardından "www" ve bundan sonra da "html" e basıp siytemizin index kısmındaki kodlara erişebiliyoruz.
+kısaca ben uzantıyı yazacak olursam.
+<<< /var/www/html/index.html
+şeklinde ulaşabiliriz.
+
+Bu index.html dosyasının içinde hali hazırda bir demo sayfa var biz buraya kendi sitemizi girebliriz.
+index kısmında ayarlama yapamıyorsa cd.. ls cd.. ls şeklinde en geriye giderek ls cd ile terminal üzerinden dosyaya kadar varıyoruz.
+dosyaya varınca da leafpad index.html şeklinde yazarak düzenliyoruz. 
+
+servisi aktif etmek için ise 
+
+<<< service apache2 start a basıyoruz
+
+yeni bir yükleme yaptığımızda ise 
+
+<<< service apache2 restart komutu ile yeniliyoruz.

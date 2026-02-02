@@ -1,0 +1,4 @@
+Dış Ağa Bağlanma
+-----------------------------
+Gördüğümüz üzere yerel ağda bir sürü değişiklik yapabiliyoruz fakat biz bu özelliği farklı ağlarda kullanabilmemiz için bunu dış ağa taşımamız gerekiyor. Bunun için;
+<<< Bize dış ağ sağlayacak "Digital Ocean" adlı siteye üye oluyoruz.

