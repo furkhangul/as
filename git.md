@@ -101,20 +101,3 @@ git clone <Dosya adı> : Githubdan projeyi bilgisayara indiriyor.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
